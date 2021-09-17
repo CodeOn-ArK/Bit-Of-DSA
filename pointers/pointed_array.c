@@ -1,8 +1,17 @@
 #include<stdio.h>
 #include<stdint.h>
 #include<stdlib.h>
-#include"/mnt/backupSD/Bit-Of-DSA/pointers/display_matrix.h"
+#include"display_matrix.h"
 
+/*
+ * Compile by
+ * gcc -c pointed_array.c 
+ * gcc -c display_matrix.c 
+ *
+ * gcc pointed_array.o display_matrix.o -o final.o
+ * To execute
+ * ./final.o
+ */
 void display_matrix(uint32_t **);
 
 int main(){

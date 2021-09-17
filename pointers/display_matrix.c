@@ -1,6 +1,6 @@
 #include<stdint.h>
 #include<stdio.h>
-#include"/mnt/backupSD/Bit-Of-DSA/pointers/display_matrix.h"
+#include"display_matrix.h"
 
 void display_matrix(uint32_t **ptr ){
   int i=0,j=0;
