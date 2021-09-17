@@ -33,20 +33,24 @@ int main(){
    printf("\n\r");
  }
 
- PRIntf("\n\r");
+ printf("\n\r");
  i=0;
 
  while(i < 3){
    j=0;
    while(j < 3){
-      printf("j=%d, i=%d, %x,\t %x,\t %d\n",j,i, (ptr2ptr) + i, *(ptr2ptr+i) +j, *(*(ptr2ptr+i) + j) );
+      printf("j=%d, i=%d, %x,\t %x,\t %d\n",j,i, (ptr2ptr) , *(ptr2ptr) , *(*(ptr2ptr)) );
+      (*ptr2ptr)++;
       j++;
    }
+   (*ptr2ptr) -= 3;
 
+   ptr2ptr++;
    i++;
    printf("\n\r");
  }
 
+ ptr2ptr = head;
  display_matrix(ptr2ptr);
  return 0;
 }
@@ -54,6 +58,7 @@ int main(){
 
 void display_matrix(uint32_t **ptr){
   int i=0,j=0;
+
   while(i < 3){
     j=0;
     while(j < 3){
