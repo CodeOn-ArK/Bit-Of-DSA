@@ -30,7 +30,7 @@ int main(){
  i=0;
  ptr2ptr = head;
 
- printf("         (ptr2ptr)   *(ptr2ptr)    **(ptr2ptr)\n\r");
+ printf("\t (ptr2ptr)   *(ptr2ptr)    **(ptr2ptr)\n\r");
  while(i < 3){
    j=0;
    while(j < 3){
